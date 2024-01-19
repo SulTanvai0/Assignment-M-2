@@ -52,7 +52,7 @@ const BooksSection = () => {
 
     function handelSearch(text) {
 
-        const filtered = books.filter((book =>
+        const filtered = Data.filter((book =>
             book.title.toLowerCase().includes(text.toLowerCase())
         ))
         setBooks([...filtered]);
